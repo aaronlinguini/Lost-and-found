@@ -1,0 +1,102 @@
+body {
+  background-color: black; /* Sets the background color of the page to black */
+  color: white;            /* Sets the text color for the entire body to white */
+  font-family: Consolas, monospace; /* Uses Consolas font, with monospace as a fallback */
+  text-align: center;      /* Centers all text on the page by default */
+}
+
+.body-text {
+  font-size: 8px; /* Set the font size of the body text */
+  margin-top: 20px; /* Add some space above the body text */
+  margin-bottom: 20px; /* Add some space below the body text */
+  color: #000000
+}
+
+.navigation-wrapper {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  margin-top: 20px; /* Add some space above the navigation */
+}
+
+.home-navigation {
+  z-index: 1000; /* Ensure the home button is on top */
+  position: absolute; /* Position relative to the nearest positioned ancestor */
+  top: 3px;
+  left: 10px;
+  font-weight: 500;
+}
+
+.controls-navigation {
+  z-index: 1000; /* Ensure the controls are on top */
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Add space between elements */
+}
+
+#colorPickerDiv {
+  display: flex; /* Use flexbox to align items horizontally */
+  flex-direction: row; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+  margin: 0 20px; /* Add some space around the color picker */
+}
+
+/* Styling for the anchor links (buttons and navigation links) */
+.nav-button {
+  color: #ffffffba;          /* Sets the link color to white */
+  text-decoration: none;   /* Removes the underline from links */
+  margin: 10px;            /* Adds space around each link for better spacing control */
+  display: inline-block;   /* Allows for padding and margin control */
+  font-size: 2em;          /* Sets the font size for the navigation buttons */
+}
+
+/* Specific styling for the home button */
+.nav-button.home-button {
+  color: #ffffffb6; /* Sets the home button color to a different color (e.g., orange) */
+}
+
+/* Specific styling for the previous page button */
+.nav-button.prev-button {
+  margin-right: 20px; /* Adds space to the right of the previous page button */
+  color: #ffffffb1;
+  margin-top: 5px; /* Adjust this value to align the arrow vertically */
+}
+
+/* Specific styling for the next page button */
+.nav-button.next-button {
+  margin-left: 20px; /* Adds space to the left of the next page button */
+  color: #ffffffb1;
+  margin-top: 5px; /* Adjust this value to align the arrow vertically */
+}
+
+/* Specific styling for the color picker label */
+.color-picker-label {
+  color: rgba(255, 255, 255, 0.713); /* Sets the color of the color picker label to white */
+  margin-right: 10px; /* Adds space to the right of the color picker label */
+}
+
+/* Specific styling for the color picker input */
+.color-picker {
+  border: none; /* Remove the default border */
+  box-shadow: none; /* Remove any box-shadow */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the color picker */
+  width: 55px; /* Set a smaller width for the color picker */
+  height: 25px; /* Set a smaller height for the color picker */
+  background: transparent; /* Make the background transparent */
+  outline: none; /* Remove the default outline */
+  margin-left: -5px; /* Adjust this value to compensate for the invisible border */
+  margin-right: -15px; /* Adjust this value to compensate for the invisible border */
+}
+
+/* Ensure the text-image-container is positioned below the controls */
+.text-image-container {
+  margin-top: 50px; /* Adjust this value to ensure it is below the controls */
+  text-align: center; /* Center the text image container */
+  width: max-content; /* Ensure the container takes up the necessary width */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+
+
+

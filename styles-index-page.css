@@ -1,0 +1,148 @@
+/* General body styling for all pages */
+body {
+  background-color: black; /* Sets the background color of the page to black */
+  color: white;            /* Sets the text color for the entire body to white */
+  font-family: Consolas, monospace; /* Uses Consolas font, with monospace as a fallback */
+  text-align: center;      /* Centers all text on the page by default */
+}
+
+
+.container-title {
+  display: block;          /* Makes this a block-level element, taking up full width */
+  text-align: center;      /* Centers the content within the container */ 
+  margin-top: 45px;
+  margin-bottom: 20px;    
+}
+
+.title {
+  display: block;          /* Makes the title a block-level element */
+  font-size: 60px;         /* Sets the font size of the title */
+  font-weight: 600;
+  margin-bottom: 10px;     /* Adds spacing below the title */
+}
+
+.container-subtitle {
+  display: block;          /* Ensures the subtitle is in its own block, below the title */
+  text-align: center;      /* Centers the text */
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 15px;     /* Adds spacing below the subtitle */
+}
+
+
+.container-sub-subtitle {
+  display: block;          /* Keeps the sub-subtitle in its own block */
+  text-align: center;      /* Centers the sub-subtitle */
+  font-size: 10px;
+  margin-bottom: 20px;     /* Adds space below the sub-subtitle */
+}
+
+
+/* Container for navigation links (page links) */
+.container-links {
+  display: flex;               /* Uses flex layout to organize the links */
+  flex-direction: column;      /* Stacks the links vertically */
+  align-items: center;         /* Centers the links horizontally within the container */
+  margin-top: 35px;
+  margin-bottom: 20px;         /* Adds space below the container to separate from other content */
+}
+
+/* Styling for the anchor links (buttons and navigation links) */
+a {
+  color: #ffffff;          /* Sets the link color to white */
+  text-decoration: none;   /* Removes the underline from links */
+  margin: 10px;            /* Adds space around each link for better spacing control */
+  display: inline-block;   /* Allows for padding and margin control */
+}
+
+.container-body-text {
+  display: block;          /* Makes the body text container a block-level element */
+  text-align: center;      /* Centers the body text */
+  margin-bottom: 20px;     /* Adds spacing below the body text */
+}
+
+.body-text {
+  display: block;          /* Makes the body text a block-level element */
+  text-align: center;      /* Centers the text */
+  color: #393939; 
+  font-size: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;    
+}
+
+.body-text-index-page {
+  display: block;          /* Makes the body text a block-level element */
+  text-align: center;      /* Centers the text */
+  color: #1c1c1c; 
+  margin-top: 50px;
+  margin-bottom: 20px;    
+}
+
+/* Controls for changing background color and arrow buttons */
+.controls-navigation {
+  display: flex;               /* Uses flex layout to align the content */
+  align-items: center;         /* Aligns items vertically at the center */
+  justify-content: center;     /* Centers all elements horizontally */
+  margin-bottom: 20px;         /* Adds spacing below the controls */
+}
+
+/* Controls for changing background color */
+.controls input[type="color"] {
+  margin-right: 10px;          /* Adds space to the right of the color picker */
+}
+
+.controls button {
+  background-color: #555;      /* Sets a dark gray background for the button */
+  color: white;                /* Sets button text color to white */
+  padding: 10px 20px;          /* Adds padding inside the button (vertical and horizontal) */
+  border: none;                /* Removes the border from the button */
+  border-radius: 5px;          /* Rounds the corners of the button */
+  cursor: pointer;             /* Changes the cursor to a pointer when hovering over the button */
+}
+
+.controls button:hover {
+  background-color: #777;      /* Changes the background color of the button to a lighter gray when hovered */
+}
+
+/* Navigation styling for arrows and buttons */
+.navigation {
+  text-align: center;          /* Centers the navigation section */
+  margin-top: 30px;            /* Adds space above the navigation section */
+}
+
+.nav-button {
+  color: white;                /* Sets navigation button color to white */
+  font-size: 2em;              /* Increases the font size of the navigation arrows */
+  margin: 0 10px;              /* Adds horizontal space between the navigation buttons */
+  text-decoration: none;       /* Removes the underline from navigation buttons */
+}
+
+
+.home-navigation {
+  z-index: 1000; /* Ensure the home button is on top */
+  position: absolute; /* Position relative to the nearest positioned ancestor */
+  top: 9px;
+  left: 10px;
+  font-weight: 500;
+  color: #ffffffa2;
+}
+
+.controls-navigation {
+  z-index: 1000; /* Ensure the controls are on top */
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+#colorPickerDiv {
+  margin: 0 20px; /* Add some space around the color picker */
+}
+
+/* Styling for the anchor links (buttons and navigation links) */
+.nav-button {
+  color: #ffffff;          /* Sets the link color to white */
+  text-decoration: none;   /* Removes the underline from links */
+  margin: 10px;            /* Adds space around each link for better spacing control */
+  display: inline-block;   /* Allows for padding and margin control */
+  font-size: 2em;          /* Sets the font size for the navigation buttons */
+}

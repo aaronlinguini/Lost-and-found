@@ -1,0 +1,79 @@
+<!--STEP 1-->
+<!--centering the text block
+To ensure that the text block is centered rather than stuck to the left side of the page, you can add CSS rules to the <div> containing the text. Adding margin and text-align properties will help:-->
+  
+  <div style="margin: 0 auto; text-align: center; width: max-content;">
+
+
+
+
+
+  <!--
+  Removing Background Color Between Text and Background:
+
+   noticed the inline style on the <pre> element includes background-color: #000000;, which is why the text has a black background that may overlap with the white space. To remove the color and ensure a clean look, you can simply delete the background-color attribute or set it to transparent:-->
+
+    <pre id="tiresult" style="font-size: 9px; font-weight: bold; padding: 4px 5px; --fs: 9px; background-color: transparent;">
+
+  
+
+
+
+
+  <!--STEP 2-->
+    <!--set it so that the page loads with a black background-->
+    <!--Add a <style> Block in the <head> Section by using the folloowing code DON'T FORGET TO CHANGE THE TITLE NAME TO WHATEVER YOU WANT THAT TITLE TO BE:-->
+
+      <head>
+    <meta charset="UTF-8">
+    <title>please</title>
+    <style>
+        body {
+            background-color: black;
+            color: white; /* Optional: Set text color to white for better visibility */
+        }
+    </style>
+</head>
+
+
+
+<!--STEP 3-->
+<!--add a colour picker and a button that allows the user to change the background colour.
+
+Add the HTML for the Color Picker and Button (inside the <body> tag) Place this part at the top of your <body> tag (copy everything below until </div>):-->
+
+  
+    <!-- Controls for changing background color -->
+  <div class="controls">
+    <input type="color" id="colorPicker" value="#000000">
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+  </div>
+
+
+
+<!--Add the JavaScript Function (before closing </body> tag) Place this script at the bottom of your <body> tag, before </body>:-->
+
+<script>
+    function changeBackgroundColor() {
+        // Get the selected color from the color picker
+        var color = document.getElementById("colorPicker").value;
+        // Change the body's background color
+        document.body.style.backgroundColor = color;
+    }
+</script>
+
+
+
+
+
+
+<!--Optional CSS for Styling the Controls (inside <style> in <head>) Add the following CSS inside your <style> block in the <head> section to style the controls section:
+css
+Copy code:-->
+
+
+.controls {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
