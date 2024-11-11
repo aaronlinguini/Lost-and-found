@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 
 # Load the HTML file
-with open("please.html", "r", encoding="utf-8") as file:
+with open("to-modify.html", "r", encoding="utf-8") as file:
     soup = BeautifulSoup(file, "html.parser")
 
 # Find all <b> tags and wrap each one in a <span> tag
