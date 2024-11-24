@@ -78,6 +78,14 @@ a {
   margin-bottom: 20px;    
 }
 
+.body-text-index-page-subtle {
+  display: block;          /* Makes the body text a block-level element */
+  text-align: center;      /* Centers the text */
+  color: #000000; 
+  margin-top: 50px;
+  margin-bottom: 20px; 
+}
+
 /* Controls for changing background color and arrow buttons */
 .controls-navigation {
   display: flex;               /* Uses flex layout to align the content */
