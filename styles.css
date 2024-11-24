@@ -12,6 +12,13 @@ body {
   color: #000000
 }
 
+.body-smaller {
+  font-size: 6px; /* Set the font size of the body text */
+  margin-top: 20px; /* Add some space above the body text */
+  margin-bottom: 20px; /* Add some space below the body text */
+  color: #000000
+}
+
 .navigation-wrapper {
   display: flex; /* Use flexbox to align items horizontally */
   justify-content: center; /* Center items horizontally */
