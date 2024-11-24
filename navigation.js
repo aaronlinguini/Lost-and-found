@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Create Previous Page button
             if (currentPage.match(/page(\d+)\.html/)) {
                 const currentPageNumber = parseInt(currentPage.match(/page(\d+)\.html/)[1]);
-                const maxPages = 5; // UPDATE THIS CALUE TO MATCH YOUR MAXIMUM NUMBER OF PAGES
+                const maxPages = 6; // UPDATE THIS CALUE TO MATCH YOUR MAXIMUM NUMBER OF PAGES
   
                 if (currentPageNumber > 1) {
                     let prevButton = document.createElement("a");
