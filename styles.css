@@ -19,6 +19,13 @@ body {
   color: #000000
 }
 
+.body-smaller-page-4 {
+  font-size: 6px; /* Set the font size of the body text */
+  margin-top: 40px; /* Add some space above the body text */
+  margin-bottom: 40px; /* Add some space below the body text */
+  color: #000000
+}
+
 .navigation-wrapper {
   display: flex; /* Use flexbox to align items horizontally */
   justify-content: center; /* Center items horizontally */
